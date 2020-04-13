@@ -1,3 +1,4 @@
+cur_dir=$(PWD)
 mkdir -p /home/box/web
 cd /home/box/web
 mkdir -p public
@@ -9,6 +10,7 @@ cd ..
 mkdir -p uploads
 mkdir -p etc
 
+cd $cur_dir
 cp -f nginx.conf /home/box/web/etc/
 sudo ln -sf /home/box/web/etc/nginx.conf  /etc/nginx/sites-enabled/test.conf
 
