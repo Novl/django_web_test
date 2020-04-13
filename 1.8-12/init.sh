@@ -1,4 +1,5 @@
-cur_dir=$(PWD)
+cur_dir=$(pwd)
+echo $cur_dir
 mkdir -p /home/box/web
 cd /home/box/web
 mkdir -p public
