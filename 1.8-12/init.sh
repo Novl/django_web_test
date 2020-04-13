@@ -13,6 +13,6 @@ mkdir -p etc
 
 cd $cur_dir
 cp -f nginx.conf /home/box/web/etc/
-sudo ln -sf /home/box/web/etc/nginx.conf  /etc/nginx/sites-enabled/test.conf
+sudo ln -sf /home/box/web/etc/nginx.conf  /etc/nginx/sites-enabled/default.conf
 
 sudo /etc/init.d/nginx restart
