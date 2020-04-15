@@ -6,4 +6,4 @@ def test(request, *args, **kwargs):
     return HttpResponse('OK')
 
 def question(request, num=None, *args, **kwargs):
-    return HttpResponse(f'info about q - {num}')
+    return HttpResponse('info about q - ' + num)
