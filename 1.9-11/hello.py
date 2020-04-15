@@ -5,10 +5,7 @@ def app(environ, start_response):
     # data = b'Hello, World!\n'
     # data = pprint.pformat(environ, indent=4)
     status = '200 OK'
-    response_headers = [
-        ('Content-Type', 'text/plain')
-        # ('Content-Length', str(len(data)))
-    ]
+    response_headers = [('Content-Type', 'text/plain')]
     start_response(status, response_headers)
     # return iter([data] + ['\n', '\n'] + environ['QUERY_STRING'].split(&))
     return [ '\n'.join(environ['QUERY_STRING'].split('&')).encode() ]
