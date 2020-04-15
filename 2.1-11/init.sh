@@ -1,3 +1,4 @@
+pip install --upgrade django==2
 cur_dir=$(pwd)
 echo $cur_dir
 mkdir -p /home/box/web/{etc,public,uploads}
