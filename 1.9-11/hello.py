@@ -11,4 +11,4 @@ def app(environ, start_response):
     ]
     start_response(status, response_headers)
     # return iter([data] + ['\n', '\n'] + environ['QUERY_STRING'].split(&))
-    return [ '\n'.join(environ['QUERY_STRING']) ]
+    return [ '\n'.join(environ['QUERY_STRING'].split('&')) ]
