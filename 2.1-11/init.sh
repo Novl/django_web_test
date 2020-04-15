@@ -10,6 +10,6 @@ sudo ln -sf /home/box/etc/nginx.conf /etc/nginx/sites-enabled/default
 
 sudo /etc/init.d/nginx restart
 
-cd ../1.9-11/ && gunicorn -c ./etc/hello.py hello:app &
+#cd ../1.9-11/ && gunicorn -c ./etc/hello.py hello:app &
 
 cd ./ask/ && gunicorn ask.wsgi:application &
