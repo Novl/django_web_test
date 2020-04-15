@@ -12,4 +12,4 @@ sudo /etc/init.d/nginx restart
 
 #cd ../1.9-11/ && gunicorn -c ./etc/hello.py hello:app &
 
-cd ./ask/ && gunicorn ask.wsgi:application &
+cd /home/box/ask/ && gunicorn ask.wsgi:application &
