@@ -1,4 +1,4 @@
-pip install --upgrade django==2
+sudo pip3 install --upgrade django==2
 cur_dir=$(pwd)
 echo $cur_dir
 mkdir -p /home/box/web/{etc,public,uploads}
@@ -13,4 +13,4 @@ sudo /etc/init.d/nginx restart
 
 #cd ../1.9-11/ && gunicorn -c ./etc/hello.py hello:app &
 
-cd /home/box/web/ask/ && gunicorn ask.wsgi:application &
+cd /home/box/web/ask/ && gunicorn -b 0.0.0.0:8000 ask.wsgi:application &
