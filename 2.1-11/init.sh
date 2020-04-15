@@ -8,4 +8,4 @@ sudo ln -sf nginx.conf /etc/nginx/sites-enabled/default
 #sudo ln -sf /home/box/etc/hello.py /etc/gunicorn.d/hello.py
 
 sudo /etc/init.d/nginx restart
-cd ./ask/ && (gunicorn myapp &) && cd --
+cd ./ask/ && (gunicorn ask.wsgi:application &) && cd --
