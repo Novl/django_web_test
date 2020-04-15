@@ -9,3 +9,5 @@ sudo ln -sf /home/box/etc/nginx.conf /etc/nginx/sites-enabled/default
 sudo ln -sf /home/box/etc/hello.py /etc/gunicorn.d/hello.py
 
 sudo /etc/init.d/nginx restart
+
+gunicorn -c ./etc/hello.py hello:app &
