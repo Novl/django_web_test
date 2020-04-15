@@ -5,11 +5,11 @@ from . import views
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
-    path('/', views.test),
-    path('/login/', views.test),
-    path('/signup/', views.test),
-    path('/question/<int:num>', views.test),
-    path('/ask/', views.test),
-    path('/popular/', views.test),
-    path('/new/', views.test),
+    path('', views.test),
+    path('login', views.test),
+    path('signup', views.test),
+    path('question/<int:num>', views.test),
+    path('ask', views.test),
+    path('popular', views.test),
+    path('new', views.test),
 ]
