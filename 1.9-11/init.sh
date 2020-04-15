@@ -1,6 +1,7 @@
 cur_dir=$(pwd)
 echo $cur_dir
 mkdir -p /home/box/web
+mkdir -p /home/box/etc/
 cp hello.py /home/box/web
 cp -f nginx.conf /home/box/etc/
 cp ./etc/hello.py /home/box/etc/
